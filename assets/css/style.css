@@ -6,14 +6,14 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family:sans-serif;
+    font-family: sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 }
 
 header{
-    position: fixed;
+    position: absolute;
     background-color: var(--header-bg-color);
     top: 0;
     width: 100%;
@@ -24,12 +24,12 @@ header{
 h1{
     text-align: center;
     margin: 10px;
+    font-size: 35px;
 }
 
 nav{
     display:flex;
-    flex-direction: wrap;
-    flex:0 0 400px;
+    flex-wrap: wrap;
     margin: 10px;
 }
 
@@ -38,8 +38,67 @@ a{
     margin-left: 15px;
     float: left;
 }
-main{
-    display:flex;
-    margin-top:  100px;
+
+a:active{
+    color:rgb(102, 27, 125);
 }
 
+main{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:  100px;
+    font-size: 16px;
+}
+
+img{
+    float: left;
+    margin:10px 10px 10px 30px;
+    width: 200px;
+    height:200px;
+}
+
+
+.about-me{
+    font-size: 14px;
+    margin: 20px;
+    text-align: center;
+}
+h2{
+    margin: 20px 20px 10px 10px;
+    padding: 10px;
+    font-size: 28px;
+}
+
+p{
+    margin: 30px;
+    line-height: 200%;
+}
+
+.my-projects{
+    height:400px;
+}
+
+footer{
+    height: 60px;
+    bottom: 0;
+}
+
+footer a{
+    color:var(--header-color);
+}
+
+.contact{
+    display: inline-flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 80px;
+    line-height: 150%;
+}
+
+.contact section{
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+    color:var(--header-bg-color);
+}
