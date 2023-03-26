@@ -1,0 +1,45 @@
+:root{
+    --header-bg-color: #97436C ;
+    --header-color: black;
+    --body-bg-color: ;
+    --body-colr: ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+header{
+    position: fixed;
+    background-color: var(--header-bg-color);
+    top: 0;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+nav{
+    display:flex;
+    flex-direction: wrap;
+    flex:0 0 400px;
+    margin: 10px;
+}
+
+a{
+    color: darkgray;
+    margin-left: 15px;
+    float: left;
+}
+main{
+    display:flex;
+    margin-top:  100px;
+}
+
