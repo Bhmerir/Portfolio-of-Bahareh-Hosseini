@@ -1,6 +1,9 @@
 :root{
     --header-bg-color: #97436C ;
     --header-color: white;
+    --large-phone-bg-color: rgb(167, 109, 179);
+    --small-phone-bg-color: rgb(216, 110, 127);
+    --hf-color: rgb(22, 7, 104);
 }
 
 *{
@@ -24,7 +27,7 @@ header{
 }
 
 h1{
-    color:pink;
+    color: var(--hf-color);
     text-align: center;
     margin: 10px;
     font-size: 35px;
@@ -121,7 +124,10 @@ footer{
 }
 
 footer a{
-    color:darkslategray;
+    color:var(--hf-color);
+}
+footer a:hover{
+    color:red;
 }
 
 .contact{
@@ -145,6 +151,7 @@ hr{
     margin-left: 10px;
 }
 
+/* Large screen*/
 @media screen and (max-width: 992px) {
     header
     {
@@ -154,28 +161,55 @@ hr{
     figcaption{
         color: var(--header-bg-color);
     }
+    .prj-image {
+        width: 300px;
+        height: 300px;
+    }
+    .prj-image:hover {
+        box-shadow: 20px 20px 20px var(--header-bg-color);
+        width: 320px;
+        height: 320px;
+    }
   }
   
   /* Large smartphones - up to 768px */
 @media screen and (max-width: 768px) {
     header{
-        background-color:rgb(167, 109, 179);
+        background-color: var(--large-phone-bg-color);
         height:fit-content;
     }
     .contact section,
     figcaption{
-        color: rgb(167, 109, 179);
+        color: var(--large-phone-bg-color);
+    }
+    .prj-image {
+        width: 250px;
+        height: 250px;
+    }
+    .prj-image:hover {
+        box-shadow: 20px 20px 20px var(--large-phone-bg-color);
+        width: 270px;
+        height: 270px;
     }
   }
   
   /* Small smartphones - up to 576px*/
   @media screen and (max-width: 576px ) {
     header {
-        background-color: #693fa8;
+        background-color: var(--small-phone-bg-color);
         height:fit-content;
     }
     .contact section,
     figcaption{
-        color: #693fa8;
+        color: var(--small-phone-bg-color);
+    }
+    .prj-image {
+        width: 150px;
+        height: 150px;
+    }
+    .prj-image:hover {
+        box-shadow: 20px 20px 20px var(--small-phone-bg-color);
+        width: 170px;
+        height: 170px;
     }
   }
