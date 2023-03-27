@@ -21,7 +21,13 @@ In this page, the following info is available:
 
 ---------------------------------
 
-![/assets/images/](/assets/images/)
+<br>
+
+### My deployed page, but with the zoom of 80%
+
+<br>
+
+![/assets/images/my-deployed-site.png](/assets/images/my-deployed-site.png)
 
 <br>
 
@@ -33,7 +39,7 @@ In this page, the following info is available:
 
 ---------------------------------
 
-[https://bhmerir.github.io/](https://bhmerir.github.io)
+[https://bhmerir.github.io/Portfolio-of-Bahareh-Hosseini/](https://bhmerir.github.io/Portfolio-of-Bahareh-Hosseini)
 
 <br>
 
