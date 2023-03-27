@@ -91,8 +91,8 @@ p{
 
 .prj-image:hover {
     box-shadow: 20px 20px 20px var(--header-bg-color);
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     z-index: 2;
 }
 
