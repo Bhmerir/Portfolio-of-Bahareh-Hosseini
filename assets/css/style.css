@@ -1,3 +1,4 @@
+/*for almost each color that was used in the page, I declared a variable*/
 :root{
     --header-bg-color: #97436C ;
     --header-color: white;
@@ -33,10 +34,12 @@ h1{
     font-size: 35px;
 }
 
+/*display of nav is set to flex then it makes the links wrap if necessary*/
 nav{
     display:flex;
     flex-wrap: wrap;
     margin: 10px;
+    text-decoration: none;
 }
 
 a{
@@ -94,10 +97,12 @@ p{
 .images{
     flex: 1 0 100%;
 }
+
 .prj-image {
     width: 300px;
     height: 300px;
     margin: 20px;
+    /*definition of transition here makes the change of width and height be smoother*/
     transition: width 1s, height 1s ease-in-out;
     align-items: center;
 }
@@ -112,6 +117,8 @@ figcaption{
     text-align: center;
     color: var(--header-bg-color)
 }
+
+/*When user hovers on each image they can see a shadow around it and the image gets a little larger*/
 .prj-image:hover {
     box-shadow: 20px 20px 20px var(--header-bg-color);
     width: 320px;
@@ -126,6 +133,8 @@ footer{
 footer a{
     color:var(--hf-color);
 }
+
+/*When user hovers on each link of contact the color will change*/
 footer a:hover{
     color:red;
 }
@@ -150,7 +159,7 @@ hr{
     width: 20%;
     margin-left: 10px;
 }
-
+/*With change of the width of screen the color of header, captions, and box shadows will change*/
 /* Large screen*/
 @media screen and (max-width: 992px) {
     header
@@ -161,14 +170,8 @@ hr{
     figcaption{
         color: var(--header-bg-color);
     }
-    .prj-image {
-        width: 300px;
-        height: 300px;
-    }
     .prj-image:hover {
         box-shadow: 20px 20px 20px var(--header-bg-color);
-        width: 320px;
-        height: 320px;
     }
   }
   
@@ -182,14 +185,8 @@ hr{
     figcaption{
         color: var(--large-phone-bg-color);
     }
-    .prj-image {
-        width: 250px;
-        height: 250px;
-    }
     .prj-image:hover {
         box-shadow: 20px 20px 20px var(--large-phone-bg-color);
-        width: 270px;
-        height: 270px;
     }
   }
   
@@ -203,13 +200,7 @@ hr{
     figcaption{
         color: var(--small-phone-bg-color);
     }
-    .prj-image {
-        width: 150px;
-        height: 150px;
-    }
     .prj-image:hover {
         box-shadow: 20px 20px 20px var(--small-phone-bg-color);
-        width: 170px;
-        height: 170px;
     }
   }
