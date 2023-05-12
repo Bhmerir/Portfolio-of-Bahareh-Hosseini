@@ -23,7 +23,7 @@ In this page, the following info is available:
 
 <br>
 
-### My deployed page, but with the zoom of 80%
+### My deployed page
 
 <br>
 
