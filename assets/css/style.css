@@ -5,6 +5,8 @@
     --large-phone-bg-color: rgb(167, 109, 179);
     --small-phone-bg-color: rgb(216, 110, 127);
     --hf-color: rgb(22, 7, 104);
+    --start-bg-color: #A95D97;
+    --end-bg-color: #F4D0EC;
 }
 
 *{
@@ -13,6 +15,7 @@
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    
 }
 header,
 footer{
@@ -25,13 +28,15 @@ header{
     width: 100%;
     height: 80px;
     margin: 0 auto;
+    padding-top: 20px;
+    height: 120px;
 }
 
 h1{
     color: var(--hf-color);
     text-align: center;
     margin: 10px;
-    font-size: 35px;
+    font-size: 50px;
 }
 
 /*display of nav is set to flex then it makes the links wrap if necessary*/
@@ -63,13 +68,14 @@ main{
 
 body{
     height: 100%;
+    background: linear-gradient(to left,var(--start-bg-color),var(--end-bg-color));;
 }
 
 #my-photo{
     float: left;
     margin:10px 10px 10px 30px;
-    width: 150px;
-    height:150px;
+    width: 200px;
+    height:200px;
 }
 
 
@@ -146,7 +152,7 @@ footer a{
 
 /*When user hovers on each link of contact the color will change*/
 footer a:hover{
-    color:red;
+    color: var(--header-color);
 }
 
 .contact{
@@ -165,6 +171,9 @@ footer a:hover{
     color:var(--header-bg-color);
 }
 
+.info{
+    padding-bottom: 20px;
+}
 hr{
     width: 20%;
     margin-left: 10px;
